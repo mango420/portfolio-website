@@ -1,4 +1,9 @@
+import AboutMe from './components/aboutme'
+import Contact from './components/contact'
+import CTFWriteUps from './components/ctfWriteUps'
 import Navbar from './components/navbar'
+import ProjectCarousel from './components/projectCarousel'
+import Socials from './components/socials'
 import Welcome from './components/welcome'
 
 export default function Home() {
@@ -7,6 +12,11 @@ export default function Home() {
       <Navbar />
       <main className="px-6">
         <Welcome />
+        <AboutMe />
+        <ProjectCarousel />
+        <CTFWriteUps />
+        <Socials />
+        <Contact />
       </main>
     </div>
   )
