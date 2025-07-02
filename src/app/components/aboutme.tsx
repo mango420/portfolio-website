@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 export default function AboutMe() {
@@ -25,13 +24,12 @@ export default function AboutMe() {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <Image
-          src="/pictures/Snibunna.png"
+        <img
+          src="/Snibunna.png"
           alt="Snibunna"
           width={300}
           height={300}
           className="rounded-md"
-          priority
         />
       </motion.div>
 

@@ -2,7 +2,6 @@
 
 import { projects } from '../data/mockdata'
 import { useState } from 'react'
-import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function ProjectCarousel() {
@@ -47,7 +46,7 @@ export default function ProjectCarousel() {
           </a>
 
           <div className="mt-6 flex justify-center">
-            <Image
+            <img
               src={project.image}
               alt={project.title}
               width={700}

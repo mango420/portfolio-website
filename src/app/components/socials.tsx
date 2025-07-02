@@ -1,14 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 const socials = [
-  { id: 'x', name: 'X / Twitter', link: 'https://twitter.com/yourhandle', icon: '/socials/x.png' },
-  { id: 'discord', name: 'Discord', link: 'https://discord.com/users/yourid', icon: '/socials/discord.png' },
-  { id: 'steam', name: 'Steam', link: 'https://steamcommunity.com/id/yourid', icon: '/socials/steam.png' },
-  { id: 'binance', name: 'Binance', link: 'https://binance.com/yourid', icon: '/socials/binance.png' },
-  { id: 'fiverr', name: 'Fiverr', link: 'https://fiverr.com/yourid', icon: '/socials/binance.png' },
+  { id: 'x', name: 'X / Twitter', link: 'https://x.com/mango69_420', icon: '/x.png' },
+  { id: 'discord', name: 'Pwn.sh Discord Server (my CTF Team!)', link: 'https://discord.gg/JSDRKU7H', icon: '/discord.png' },
+  { id: 'steam', name: 'Steam', link: 'https://steamcommunity.com/id/mangoeis69', icon: '/steam.png' },
+  { id: 'fiverr', name: 'Fiverr', link: 'https://www.fiverr.com/s/bdwV4Wq', icon: '/fiverr.png' },
+  { id: 'binance', name: 'Binance (Referal Link)', link: 'https://www.binance.com/futures/ref/1087059882', icon: '/binance.png' },
 ]
 
 export default function Socials() {
@@ -29,11 +28,11 @@ export default function Socials() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          Socials
+          Socials & Referal Links
         </motion.h2>
 
         <div className="flex flex-col gap-3">
-          {socials.map((s, index) => (
+          {socials.map((s) => (
             <motion.a
               key={s.id}
               href={s.link}
@@ -47,7 +46,7 @@ export default function Socials() {
               transition={{ duration: 0.6 }}
               className="flex items-center gap-3 p-3 rounded-md bg-black/30 border border-white/10 hover:border-blue-400 transition shadow-md hover:shadow-lg min-h-[50px]"
             >
-              <Image
+              <img
                 src={s.icon}
                 alt={s.name}
                 width={40}
@@ -66,12 +65,11 @@ export default function Socials() {
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <Image
-          src="/pictures/Zurrokex.png"
+        <img
+          src="/Zurrokex.png"
           alt="Zurrokex"
-          width={400}   // Größer gemacht
+          width={400}
           height={400}
-          priority
         />
       </motion.div>
     </motion.section>

@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 export default function Contact() {
   return (
@@ -24,7 +23,7 @@ export default function Contact() {
       </motion.h2>
 
       <motion.a
-        href="mailto:your@email.com"
+        href="mailto:mango@mango-dev.net"
         whileHover={{ rotate: 15, scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0, scale: 0.9 }}
@@ -33,12 +32,11 @@ export default function Contact() {
         transition={{ duration: 0.8 }}
         className="relative"
       >
-        <Image
-          src="/pictures/sharingan.png"
+        <img
+          src="/sharingan.png"
           alt="Sharingan"
           width={300}
           height={300}
-          priority
         />
       </motion.a>
 

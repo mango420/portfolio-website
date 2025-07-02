@@ -1,13 +1,12 @@
 'use client'
 
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 
 export default function Welcome() {
   return (
     <motion.div
-      className="mx-auto mt-28 max-w-5xl flex items-center justify-between gap-8 rounded-md border border-white/20 bg-black/20 px-10 md:px-22 py-16 backdrop-blur-md"
+      className="mx-auto mt-28 max-w-5xl flex items-center justify-between gap-8 rounded-md border border-white/20 bg-black/20 px-10 md:px-14 py-14 backdrop-blur-md"
       initial={{ opacity: 0, y: 30, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 1, ease: 'easeOut' }}
@@ -18,7 +17,7 @@ export default function Welcome() {
         transition={{ duration: 1, delay: 0.3 }}
       >
         <h1 className="text-5xl font-libre mb-4">
-          Hey! <span className="inline-block">👋</span>
+          Hey! Weclome to Mangos Space. 👋
         </h1>
         <TypeAnimation
           sequence={[
@@ -46,12 +45,11 @@ export default function Welcome() {
         animate={{ opacity: 1, rotate: 0 }}
         transition={{ duration: 1, delay: 0.6 }}
       >
-        <Image
-          src="/pictures/Sableye.png"
+        <img
+          src="/Sableye.png"
           alt="Sableye"
-          width={250}
-          height={250}
-          priority
+          width={300}
+          height={300}
         />
       </motion.div>
     </motion.div>
